@@ -1,0 +1,36 @@
+Open a shell, either a terminal or GitBash.
+
+Check if Git is installed.  If it doesn’t return the Git version you have on your machine, please follow the steps here. 
+
+git --version
+
+Create a branch.  The name of the branch can be your user story id.  Eg. US308944
+
+git   checkout -b <name-of-branch>
+
+To work on an existing branch or switch between branches. 
+
+git   checkout <name-of-branch>
+
+To view the change you made (add, change or delete any files / folders):
+
+git status
+
+To view the differences between your local, unstaged changes and the cloned repository:
+
+git diff
+
+To add the local changes to the stage / index, use git add.  To add all changes in current directory and all subdirectories, use a . character.
+
+git add   <file or folder name to add>
+
+git add   .
+
+To save the staged file, you will need to commit the change.  It is a good practice to provide a meaningful comment to describe the change.
+
+git commit   -m “your comment”
+
+To send (push) your changes made to your branch in Gitlab repository, use the push command.
+
+git push   origin <branch-name>
+
